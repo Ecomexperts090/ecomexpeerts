@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ecom Experts - Driving E-commerce Success</title>
+    <title>Ecom Experts - Driving Dropshipping Success</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Google Font: Inter -->
@@ -23,6 +23,10 @@
         /* Custom style for mobile menu button hover effect */
         #mobile-menu-button:hover svg {
             color: white; 
+        }
+        /* Ensure the animated numbers and labels don't push each other on extra small screens */
+        .stat-card {
+            min-height: 120px; /* Gives cards a consistent height */
         }
     </style>
 </head>
@@ -81,10 +85,12 @@
         <section id="home" class="pt-20 pb-24 bg-white">
             <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                 <h1 class="text-4xl md:text-6xl font-extrabold text-gray-900 leading-tight mb-4">
-                    Driving <span class="text-indigo-600">E-commerce Success</span>
+                    Driving <span class="text-indigo-600">Dropshipping Success</span>
+                    <!-- E-commerce replaced with Dropshipping -->
                 </h1>
                 <p class="text-xl md:text-2xl text-gray-500 mb-8 max-w-3xl mx-auto">
-                    Ecom Experts is your dedicated partner for scaling online stores. We handle ads, products, and operations so you can focus on growth.
+                    <!-- E-commerce replaced with dropshipping -->
+                    Ecom Experts is your dedicated partner for scaling online dropshipping stores. We handle ads, products, and operations so you can focus on growth.
                 </p>
                 <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
                     <a href="#plans" class="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-full shadow-lg text-white bg-indigo-600 hover:bg-indigo-700 transition duration-300 transform hover:scale-105">
@@ -100,8 +106,9 @@
         <!-- 2. Services Section -->
         <section id="services" class="py-16 md:py-24 bg-gray-50">
             <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-                <h2 class="section-heading">Services That Fuel Your E-commerce Growth</h2>
-                <p class="text-center text-gray-600 mb-12 max-w-xl mx-auto">We provide specialized services designed to overcome common e-commerce challenges and drive profitability.</p>
+                <!-- E-commerce replaced with Dropshipping -->
+                <h2 class="section-heading">Services That Fuel Your Dropshipping Growth</h2>
+                <p class="text-center text-gray-600 mb-12 max-w-xl mx-auto">We provide specialized services designed to overcome common dropshipping challenges and drive profitability.</p>
 
                 <!-- Grid will stack vertically on smaller screens, which is responsive -->
                 <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -119,7 +126,8 @@
                         <div class="flex justify-center sm:justify-start">
                             <svg class="w-10 h-10 text-indigo-600 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
                         </div>
-                        <h3 class="text-xl font-bold mb-3 text-gray-900">E-commerce Store Development</h3>
+                         <!-- E-commerce replaced with Dropshipping -->
+                        <h3 class="text-xl font-bold mb-3 text-gray-900">Dropshipping Store Development</h3>
                         <p class="text-gray-500 text-sm">Building high-converting, mobile-optimized Shopify/WooCommerce stores from scratch.</p>
                     </div>
 
@@ -152,27 +160,26 @@
                 <!-- Grid will show 2 columns on small screens and 4 on large screens -->
                 <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
                     <!-- Stat 1: ROAS (target 8) -->
-                    <!-- Font size changed from text-5xl to text-4xl for better fit -->
-                    <div class="bg-white/10 backdrop-blur-sm p-6 rounded-xl shadow-xl border border-white/20">
+                    <!-- Used stat-card class for mobile layout stability -->
+                    <div class="stat-card bg-white/10 backdrop-blur-sm p-6 rounded-xl shadow-xl border border-white/20 flex flex-col justify-center">
                         <p class="animated-number text-4xl font-extrabold text-white mb-2" data-target="8" data-prefix="+" data-suffix="X">0X</p>
                         <p class="text-indigo-200 uppercase tracking-widest text-sm">Avg Return on Ad Spend (ROAS)</p>
                     </div>
                     <!-- Stat 2: Revenue Generated (target 5000000) -->
-                     <!-- Font size changed from text-5xl to text-4xl for better fit -->
-                    <div class="bg-white/10 backdrop-blur-sm p-6 rounded-xl shadow-xl border border-white/20">
+                     <!-- Used stat-card class for mobile layout stability -->
+                    <div class="stat-card bg-white/10 backdrop-blur-sm p-6 rounded-xl shadow-xl border border-white/20 flex flex-col justify-center">
                         <p class="animated-number text-4xl font-extrabold text-white mb-2" data-target="5000000" data-prefix="₹" data-suffix="+">₹0+</p>
                         <p class="text-indigo-200 uppercase tracking-widest text-sm">Total Revenue Generated</p>
                     </div>
                     <!-- Stat 3: Client Retention (target 95) -->
-                     <!-- Font size changed from text-5xl to text-4xl for better fit -->
-                    <div class="bg-white/10 backdrop-blur-sm p-6 rounded-xl shadow-xl border border-white/20">
+                     <!-- Used stat-card class for mobile layout stability -->
+                    <div class="stat-card bg-white/10 backdrop-blur-sm p-6 rounded-xl shadow-xl border border-white/20 flex flex-col justify-center">
                         <p class="animated-number text-4xl font-extrabold text-white mb-2" data-target="95" data-suffix="%">0%</p>
                         <p class="text-indigo-200 uppercase tracking-widest text-sm">Client Satisfaction Rate</p>
                     </div>
                     <!-- Stat 4: Ad Spend Managed (target 10000000 = 1 Crore) -->
-                    <!-- Font size changed from text-5xl to text-4xl for better fit -->
-                    <!-- data-target updated from 2500000 to 10000000 -->
-                    <div class="bg-white/10 backdrop-blur-sm p-6 rounded-xl shadow-xl border border-white/20">
+                    <!-- Used stat-card class for mobile layout stability -->
+                    <div class="stat-card bg-white/10 backdrop-blur-sm p-6 rounded-xl shadow-xl border border-white/20 flex flex-col justify-center">
                         <p class="animated-number text-4xl font-extrabold text-white mb-2" data-target="10000000" data-prefix="₹" data-suffix="+">₹0+</p>
                         <p class="text-indigo-200 uppercase tracking-widest text-sm">Total Ad Spend Managed</p>
                     </div>
@@ -200,6 +207,7 @@
                     </div>
 
                     <!-- Testimonial 3 -->
+                    <!-- Changed "e-commerce growth" to "dropshipping" for consistency -->
                     <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-100 transform transition duration-500 hover:scale-[1.02]">
                         <p class="text-gray-600 italic mb-4">"We opted for the Full Scaling plan, and it's been a game-changer. Product sourcing, ads, and logistics are now seamless. True experts."</p>
                         <p class="font-bold text-gray-900">- Simran Kaur, Marketing Head, Tech Gadgets</p>
@@ -212,7 +220,8 @@
         <!-- 5. Pricing and Plans Section -->
         <section id="plans" class="py-16 md:py-24 bg-white">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <h2 class="section-heading">Choose Your Path to E-commerce Growth</h2>
+                <!-- E-commerce replaced with Dropshipping -->
+                <h2 class="section-heading">Choose Your Path to Dropshipping Growth</h2>
                 <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">Select the plan that aligns with your current business goals and needs. Easy to upgrade anytime.</p>
 
                 <!-- Pricing Grid - Stacks vertically on mobile, shows 3 columns on large screen -->
@@ -259,13 +268,14 @@
                         </button>
                     </div>
 
-                    <!-- Plan Card 2: Website Launch (Rs 3,999) -->
+                    <!-- Plan Card 2: Dropshipping Website Launch (Rs 3,999) -->
                     <div class="bg-white border-2 border-indigo-100 rounded-3xl shadow-xl p-8 flex flex-col transition duration-300 hover:shadow-2xl hover:border-indigo-400">
                         <div class="flex-shrink-0">
                             <span class="text-xs font-semibold uppercase tracking-wider text-indigo-600 bg-indigo-100 rounded-full px-3 py-1">Store Setup</span>
                         </div>
-                        <h3 class="text-2xl font-extrabold text-gray-900 mt-4 mb-2">Ecom Website Launch</h3>
-                        <p class="text-gray-500 mb-6">One-time setup for a high-converting, launch-ready Ecom store.</p>
+                        <!-- Ecom Website Launch replaced with Dropshipping Website Launch -->
+                        <h3 class="text-2xl font-extrabold text-gray-900 mt-4 mb-2">Dropshipping Website Launch</h3>
+                        <p class="text-gray-500 mb-6">One-time setup for a high-converting, launch-ready Dropshipping store.</p>
                         
                         <div class="flex items-center mb-6">
                             <span class="text-5xl font-extrabold text-gray-900">₹3,999</span>
@@ -295,18 +305,20 @@
                             </li>
                         </ul>
 
-                        <button onclick="handleBuyNow('Ecom Website Launch - ₹3,999')" class="w-full mt-auto py-3 bg-indigo-500 text-white font-semibold rounded-xl shadow-md hover:bg-indigo-600 transition duration-300 transform hover:scale-[1.01] focus:outline-none focus:ring-4 focus:ring-indigo-300">
+                        <button onclick="handleBuyNow('Dropshipping Website Launch - ₹3,999')" class="w-full mt-auto py-3 bg-indigo-500 text-white font-semibold rounded-xl shadow-md hover:bg-indigo-600 transition duration-300 transform hover:scale-[1.01] focus:outline-none focus:ring-4 focus:ring-indigo-300">
                             Buy Now
                         </button>
                     </div>
 
-                    <!-- Plan Card 3: Full Ecom Scale (Rs 5,999) - Featured & Mobile Safe Scaling -->
+                    <!-- Plan Card 3: Full Dropshipping Scale (Rs 5,999) - Featured & Mobile Safe Scaling -->
                     <div class="bg-indigo-700 text-white rounded-3xl shadow-2xl p-8 flex flex-col transition duration-500 lg:transform lg:scale-105">
                         <div class="flex-shrink-0">
                             <span class="text-xs font-semibold uppercase tracking-wider text-yellow-300 bg-indigo-900 rounded-full px-3 py-1">Best Value</span>
                         </div>
-                        <h3 class="text-2xl font-extrabold text-white mt-4 mb-2">Full Ecom Scaling</h3>
-                        <p class="text-indigo-200 mb-6">The all-in-one solution for serious e-commerce growth and automation.</p>
+                        <!-- Full Ecom Scaling replaced with Full Dropshipping Scaling -->
+                        <h3 class="text-2xl font-extrabold text-white mt-4 mb-2">Full Dropshipping Scaling</h3>
+                        <!-- e-commerce replaced with dropshipping -->
+                        <p class="text-indigo-200 mb-6">The all-in-one solution for serious dropshipping growth and automation.</p>
                         
                         <div class="flex items-center mb-6">
                             <span class="text-5xl font-extrabold text-white">₹5,999</span>
@@ -332,7 +344,7 @@
                             </li>
                         </ul>
 
-                        <button onclick="handleBuyNow('Full Ecom Scaling - ₹5,999')" class="w-full mt-auto py-3 bg-yellow-400 text-indigo-900 font-bold rounded-xl shadow-lg hover:bg-yellow-300 transition duration-300 transform hover:scale-[1.01] focus:outline-none focus:ring-4 focus:ring-yellow-500">
+                        <button onclick="handleBuyNow('Full Dropshipping Scaling - ₹5,999')" class="w-full mt-auto py-3 bg-yellow-400 text-indigo-900 font-bold rounded-xl shadow-lg hover:bg-yellow-300 transition duration-300 transform hover:scale-[1.01] focus:outline-none focus:ring-4 focus:ring-yellow-500">
                             Buy Now
                         </button>
                     </div>
@@ -437,7 +449,7 @@
         // Function to animate the counting
         function animateNumber(element, target) {
             let start = 0;
-            // Animation duration increased from 2000ms to 4000ms (4 seconds)
+            // Animation duration is 4 seconds (4000ms)
             const duration = 4000; 
             const startTime = performance.now();
 
@@ -445,10 +457,10 @@
                 const elapsedTime = currentTime - startTime;
                 const progress = Math.min(elapsedTime / duration, 1);
                 
-                // Calculate current value based on progress, but handle small targets (like 8) carefully
+                // Calculate current value based on progress
                 let value = progress * target;
                 if (target < 100) {
-                     // For small integer targets, floor/ceil appropriately
+                     // For small integer targets (like 8), ceil to show whole numbers
                     value = Math.ceil(value); 
                 } else {
                     value = Math.floor(value);
